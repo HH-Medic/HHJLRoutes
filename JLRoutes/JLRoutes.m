@@ -23,7 +23,6 @@ NSString *const kJLRoutesParameterKey = @"kJLRoutesParameter";
 static NSMutableDictionary *routeControllersMap = nil;
 static BOOL verboseLoggingEnabled = NO;
 static BOOL shouldDecodePlusSymbols = YES;
-static BOOL convertParaToArray = NO;
 
 @interface JLRoutes ()
 
@@ -68,12 +67,8 @@ static BOOL convertParaToArray = NO;
 		}
     }
     
-    if (convertParaToArray)
-    {
-        return @{kJLRoutesParameterKey:[tmpArray copy]};
-    }
-    
-	return parameters;
+    return @{kJLRoutesParameterKey:[tmpArray copy]};
+//	return parameters;
 }
 
 @end
@@ -178,10 +173,6 @@ static BOOL convertParaToArray = NO;
 	return shouldDecodePlusSymbols;
 }
 
-+ (void)parameterToArray
-{
-    convertParaToArray = YES;
-}
 
 #pragma mark -
 #pragma mark Routing API

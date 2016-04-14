@@ -25,8 +25,6 @@ FOUNDATION_EXTERN NSString *__nonnull const kJLRoutesParameterKey;
  JLRoutes is a way to manage URL routes and invoke them from a URL.
  */
 
-+ (void)parameterToArray;
-
 /// Returns the global routing namespace (this is used by the +addRoute methods by default)
 + (nonnull instancetype)globalRoutes;
 
