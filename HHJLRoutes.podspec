@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HHJLRoutes"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "根据joeldev's JLRoutes修改，将parameter以数组形式返回。"
   s.homepage     = "https://github.com/joeldev/JLRoutes"
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "Joel Levin" => "joel@joeldev.com" }
-  s.source       = { :git => "https://github.com/HH-Medic/HHJLRoutes", :tag => s.version }
+  s.source       = { :git => "https://github.com/HH-Medic/HHJLRoutes.git", :tag => s.version }
 
   s.source_files = 'JLRoutes', 'JLRoutes/*.{h,m}'
   s.framework  = 'Foundation'
